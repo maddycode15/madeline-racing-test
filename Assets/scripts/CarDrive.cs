@@ -31,5 +31,16 @@ public class CarDrive : MonoBehaviour
             rb.AddRelativeForce(-Vector3.forward * stop);
         }
 
+        if (Input.GetKey(KeyCode.D)) 
+        {
+            rb.AddTorque(Vector3.up * turnSpeed);
+        }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            rb.AddTorque(Vector3.down * turnSpeed);
+        }
+
+
     }
 }

@@ -6,6 +6,8 @@ public class CarDrive : MonoBehaviour
 {
     public float speed;
 
+    public float stop;
+
     public float turnSpeed;
 
     private Rigidbody rb;
@@ -21,10 +23,13 @@ public class CarDrive : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W))
         {
-            rb.AddRelativeForce(Vector3.forward);
+            rb.AddRelativeForce(Vector3.forward * speed);
         }
 
-
+       else if (Input.GetKey(KeyCode.S))
+        {
+            rb.AddRelativeForce(-Vector3.forward * stop);
+        }
 
     }
 }

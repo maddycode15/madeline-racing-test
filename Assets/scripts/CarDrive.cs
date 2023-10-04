@@ -10,6 +10,8 @@ public class CarDrive : MonoBehaviour
 
     public float turnSpeed;
 
+    public float gravity;
+
     private Rigidbody rb;
 
     // Start is called before the first frame update
@@ -40,6 +42,8 @@ public class CarDrive : MonoBehaviour
         {
             rb.AddTorque(Vector3.down * turnSpeed);
         }
+
+        rb.AddForce(Vector3.down * gravity);
 
 
     }

@@ -3648,7 +3648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 350
-  stop: 400
+  stop: 250
   turnSpeed: 50
   gravity: 100
 --- !u!1 &1406653293

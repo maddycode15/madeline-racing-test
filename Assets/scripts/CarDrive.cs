@@ -39,10 +39,13 @@ public class CarDrive : MonoBehaviour
         {
             rb.AddRelativeForce(-Vector3.forward * stop);
         }
-
-        Vector3 localVelocity = transform.InverseTransformDirection(rb.velocity);
-        localVelocity.x = 0;
-        rb.velocity = transform.TransformDirection(localVelocity);
+         if (!Input.GetKey(KeyCode.Space))
+        {
+            Vector3 localVelocity = transform.InverseTransformDirection(rb.velocity);
+            localVelocity.x = 0;
+            rb.velocity = transform.TransformDirection(localVelocity);
+        }
+        
 
         if (Input.GetKey(KeyCode.D)) 
         {

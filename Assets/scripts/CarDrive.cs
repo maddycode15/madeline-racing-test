@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CarDrive : MonoBehaviour
 {
+    public GameObject Car;
+
     public float speed;
 
     public float stop;
@@ -11,6 +13,8 @@ public class CarDrive : MonoBehaviour
     public float turnSpeed;
 
     public float gravity;
+
+    private Vector3 offset;
 
   
 
@@ -25,12 +29,18 @@ public class CarDrive : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+       // if (Input.GetKey(KeyCode.W))
+       // {
+           // rb.AddRelativeForce(new Vector3(Vector3.forward.x, 0, Vector3.forward.z) * speed);
+       // }
+
+
         if (Input.GetKey(KeyCode.W))
         {
-            rb.AddRelativeForce(new Vector3(Vector3.forward.x, 0, Vector3.forward.z) * speed);
+            rb.AddRelativeForce(Vector3.forward * speed);
         }
 
-       else if (Input.GetKey(KeyCode.S))
+        else if (Input.GetKey(KeyCode.S))
         {
             rb.AddRelativeForce(-Vector3.forward * stop);
         }

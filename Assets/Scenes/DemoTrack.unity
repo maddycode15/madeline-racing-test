@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1149,7 +1149,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7063189, z: -0, w: 0.70789385}
   m_LocalPosition: {x: -2.2240582, y: 0.35034204, z: -239.01068}
-  m_LocalScale: {x: -417.6135, y: 0.9871, z: -0.0020000003}
+  m_LocalScale: {x: 417.6135, y: 0.9871, z: 0.002}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 858921140}
@@ -1789,7 +1789,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7063189, z: -0, w: 0.70789385}
   m_LocalPosition: {x: -2.2240582, y: 0.35034204, z: -239.01068}
-  m_LocalScale: {x: -417.6135, y: 0.9871, z: -0.0020000003}
+  m_LocalScale: {x: 417.6135, y: 0.9871, z: 0.002}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1924122519}
@@ -4081,7 +4081,7 @@ Transform:
   m_GameObject: {fileID: 933733956}
   serializedVersion: 2
   m_LocalRotation: {x: 1.1102231e-17, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.619453, y: 1, z: -463.65375}
+  m_LocalPosition: {x: -44.31, y: 1, z: -463.65375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4124,7 +4124,7 @@ Camera:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.05724919, g: 1, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -6000,7 +6000,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7046228, z: -0, w: 0.7095821}
   m_LocalPosition: {x: 346.5402, y: 1.5, z: -288.7314}
-  m_LocalScale: {x: -329.4809, y: 1, z: 1.3639816}
+  m_LocalScale: {x: 329.4809, y: 1, z: 1.3639816}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -6522,7 +6522,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 182.59694, y: 0.35684204, z: -30.856071}
-  m_LocalScale: {x: -371.29834, y: 1, z: 1}
+  m_LocalScale: {x: 371.2983, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 858921140}

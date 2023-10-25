@@ -20,7 +20,7 @@ public class CarDrive : MonoBehaviour
 
   
 
-    private Rigidbody rb;
+    public Rigidbody rb;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +37,8 @@ public class CarDrive : MonoBehaviour
        // }
 
 
+
+        // this part of the code adds speed to the car when the correct keys are held down, by applying force to the rigidbody attached to the car
         if (Input.GetKey(KeyCode.W))
         {
             rb.AddRelativeForce(Vector3.forward * speed);
@@ -52,7 +54,7 @@ public class CarDrive : MonoBehaviour
             rb.AddRelativeForce(-Vector3.forward * stop);
         }
          if (!Input.GetKey(KeyCode.Space))
-        {
+        {// this makes it so the car does not slide around and drift, i added a feature so that if you are pressing the space key it disables this code, creating a drift button
             Vector3 localVelocity = transform.InverseTransformDirection(rb.velocity);
             localVelocity.x = 0;
             rb.velocity = transform.TransformDirection(localVelocity);
@@ -78,7 +80,21 @@ public class CarDrive : MonoBehaviour
 
         rb.AddForce(Vector3.up * gravity);
 
+      
+
+   
+
         
 
     }
+    // this code is an attempt to make a speed boost
+    private void OnTriggerStay(Collider other)
+    {
+
+        if (other.gameObject.CompareTag("SpeedBoost")) ;
+        rb.AddRelativeForce(Vector3.forward * speed);
+    }
+
+
+
 }

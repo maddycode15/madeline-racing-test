@@ -14,6 +14,8 @@ public class CarDrive : MonoBehaviour
 
     public float gravity;
 
+    public float driftspeed;
+
     private Vector3 offset;
 
   
@@ -56,6 +58,11 @@ public class CarDrive : MonoBehaviour
             rb.velocity = transform.TransformDirection(localVelocity);
         }
         
+         if (Input.GetKey(KeyCode.Space))
+        {
+            rb.AddRelativeForce(Vector3.forward * driftspeed);
+        }
+
 
         if (Input.GetKey(KeyCode.D)) 
         {
@@ -69,7 +76,7 @@ public class CarDrive : MonoBehaviour
             rb.AddTorque(Vector3.down * turnSpeed);
         }
 
-        rb.AddForce(Vector3.down * gravity);
+        rb.AddForce(Vector3.up * gravity);
 
         
 

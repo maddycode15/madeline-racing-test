@@ -16,6 +16,8 @@ public class CarDrive : MonoBehaviour
 
     public float driftspeed;
 
+    public float BoostSpeed;
+
     private Vector3 offset;
 
   
@@ -26,6 +28,9 @@ public class CarDrive : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+
+
     }
 
     // Update is called once per frame
@@ -91,10 +96,10 @@ public class CarDrive : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
 
-        if (other.gameObject.CompareTag("SpeedBoost")) ;
-        rb.AddRelativeForce(Vector3.forward * speed);
+        if (other.gameObject.CompareTag("SpeedBoost"))
+        rb.AddRelativeForce(Vector3.forward * BoostSpeed);
     }
 
-
+    
 
 }

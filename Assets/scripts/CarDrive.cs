@@ -100,6 +100,13 @@ public class CarDrive : MonoBehaviour
         rb.AddRelativeForce(Vector3.forward * BoostSpeed);
     }
 
-    
+    private void OnTriggerStay(Collider other)
+    {
+
+        if (other.gameObject.CompareTag("Slow"))
+            rb.AddRelativeForce(Vector3.back * BoostSpeed);
+    }
+
+
 
 }

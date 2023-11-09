@@ -93,19 +93,19 @@ public class CarDrive : MonoBehaviour
 
     }
     // this code is an attempt to make a speed boost
-    private void OnTriggerStay(Collider other)
-    {
+    //private void OnTriggerStay(Collider other)
+  //  {
 
-        if (other.gameObject.CompareTag("SpeedBoost"))
-        rb.AddRelativeForce(Vector3.forward * BoostSpeed);
-    }
+       // if (other.gameObject.CompareTag("SpeedBoost"))
+       // rb.AddRelativeForce(Vector3.forward * BoostSpeed);
+   // }
 
-    private void OnTriggerStay(Collider other)
-    {
+   // private void OnTriggerStay(Collider other)
+    //{
 
-        if (other.gameObject.CompareTag("Slow"))
-            rb.AddRelativeForce(Vector3.back * BoostSpeed);
-    }
+       // if (other.gameObject.CompareTag("Slow"))
+     //       rb.AddRelativeForce(Vector3.back * BoostSpeed);
+ //   }
 
 
 

@@ -476,9 +476,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4683669308469848369, guid: 39922a9102a0e444daaf7a01b40c301b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4683669308469848369, guid: 39922a9102a0e444daaf7a01b40c301b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 44b2c16bf69f32a4fb9621c18b18993e, type: 2}
+    - target: {fileID: -808966925217029657, guid: 39922a9102a0e444daaf7a01b40c301b, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -808966925217029657, guid: 39922a9102a0e444daaf7a01b40c301b, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: e8bd9bc97fdbe914cb4fce6b24993dac, type: 2}
     - target: {fileID: 919132149155446097, guid: 39922a9102a0e444daaf7a01b40c301b, type: 3}
       propertyPath: m_Name
       value: testtrack2
@@ -13764,7 +13776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4591498075413659238, guid: ca8b23576f8a54949b2225d77c117fe5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1174.53
+      value: -1139.6122
       objectReference: {fileID: 0}
     - target: {fileID: 4591498075413659238, guid: ca8b23576f8a54949b2225d77c117fe5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13815,12 +13827,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1943893476}
     - target: {fileID: 5776265126547038644, guid: ca8b23576f8a54949b2225d77c117fe5, type: 3}
+      propertyPath: gravity
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776265126547038644, guid: ca8b23576f8a54949b2225d77c117fe5, type: 3}
       propertyPath: turnSpeed
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5776265126547038644, guid: ca8b23576f8a54949b2225d77c117fe5, type: 3}
       propertyPath: BoostSpeed
       value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782099349904915610, guid: ca8b23576f8a54949b2225d77c117fe5, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7626089965536395197, guid: ca8b23576f8a54949b2225d77c117fe5, type: 3}
       propertyPath: m_LocalPosition.x
